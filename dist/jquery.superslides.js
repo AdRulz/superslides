@@ -87,6 +87,7 @@
   setVerticalPosition = function($img) {
     var scale_height;
     scale_height = width / $img.data('aspect-ratio');
+    $img.height(scale_height);
     if (scale_height >= height) {
       return $img.css({
         top: -(scale_height - height) / 2
@@ -101,6 +102,7 @@
   setHorizontalPosition = function($img) {
     var scale_width;
     scale_width = height * $img.data('aspect-ratio');
+    $img.width(scale_width);
     if (scale_width >= width) {
       return $img.css({
         left: -(scale_width - width) / 2

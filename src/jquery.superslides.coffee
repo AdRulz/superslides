@@ -62,6 +62,7 @@ loadImage = ($img, callback) ->
 
 setVerticalPosition = ($img) ->
   scale_height = width / $img.data('aspect-ratio')
+  $img.height(scale_height)
 
   if scale_height >= height
     $img.css
@@ -72,6 +73,7 @@ setVerticalPosition = ($img) ->
 
 setHorizontalPosition = ($img) ->
   scale_width = height * $img.data('aspect-ratio')
+  $img.width(scale_width)
 
   if scale_width >= width
     $img.css
