@@ -111,7 +111,7 @@ addPaginationItem = (i) ->
     i = size - 1 # size is not zero indexed
 
   $pagination.append $("<a>",
-    href: "#{window.location.pathname}##{i}"
+    href: "#{window.location.pathname + window.location.search}##{i}"
   )
 
 start = ->
