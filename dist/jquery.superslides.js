@@ -146,7 +146,7 @@
       i = size - 1;
     }
     return $pagination.append($("<a>", {
-      href: "" + window.location.href + "#" + i
+      href: "" + window.location.pathname + "#" + i
     }));
   };
 
