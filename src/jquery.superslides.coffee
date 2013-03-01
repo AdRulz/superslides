@@ -133,7 +133,7 @@ Superslides = (el, options = {}) ->
       i = @size() - 1 # size is not zero indexed
 
     $pagination.append $("<a>",
-      href: "##{i}"
+      href: "#{window.location.pathname + window.location.search}##{i}"
       class: "current" if @current == $pagination.children().length
     )
 
