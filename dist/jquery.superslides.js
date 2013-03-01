@@ -1,4 +1,4 @@
-/*! Superslides - v0.5.2 - 2013-01-20
+/*! Superslides - v0.5.2 - 2013-03-01
 * https://github.com/nicinabox/superslides
 * Copyright (c) 2013 Nic Aitch; Licensed MIT */
 
@@ -146,7 +146,7 @@
         i = _this.size() - 1;
       }
       return $pagination.append($("<a>", {
-        href: "#" + i,
+        href: "" + (window.location.pathname + window.location.search) + "#" + i,
         "class": _this.current === $pagination.children().length ? "current" : void 0
       }));
     };
